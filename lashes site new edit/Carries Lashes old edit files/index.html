@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carries Lashes</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="logo">
+            <img src="blisslogo2.png" alt="Logo">
+        </div>
+
+        <nav class="main-navigation">
+            <ul>
+                <li><a class="list-item" href="home.html" target="_blank" rel="noopener noreferrer"><b>home</b></a></li>
+                <li><a class="list-item" href="menu.html" target="_blank" rel="noopener noreferrer"><b>menu</b></a></li>
+                <li><a class="list-item" href="contact.html" target="_blank"
+                        rel="noopener noreferrer"><b>contact</b></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div class="banner">
+
+
+
+        <h1>Carries Lashes and Beauty</h1>
+
+
+    </div>
+
+    <section class="intro">
+        <h2><b><strong>Eye Lash Exttensions</strong></b></h2>
+        <p class="quote"><strong><em>"Eye's are the window to the soal"</em></strong></p>
+        <p>....Experience the joy of beautiful Lashes. Swim, Shower, Sauna, Sleep, Cry and still look gorgeous. Perfect
+            for holiday's, special occasions or just a treat. Wave goodbye to mascara...</p>
+        <p>Extensions are very effective when lashes are going grey or thinning in men and women. They can be an amazing
+            confidence boost at any age.</p>
+    </section>
+
+
+    <section class="images">
+
+        <div class="image1">
+            <img src="C:\Users\matti\OneDrive\Desktop\coding course content\Carries Lashes\lash website files\IMG_6866.jpeg"
+                alt="eye-bluelash">
+        </div>
+
+        <div class="image2">
+            <img src="C:\Users\matti\OneDrive\Desktop\coding course content\Carries Lashes\lash website files\iStock-499780376.jpg"
+                alt="eyestock2">
+
+        </div>
+
+        <div class="image3">
+            <img src="C:\Users\matti\OneDrive\Desktop\coding course content\Carries Lashes\lash website files\iStock-515272999.jpg"
+                alt="eyestock1">
+        </div>
+
+    </section>
+
+
+    <section class="main">
+        <div class="products"><a class="infinity" href="https://www.infinitylashes.co.uk/" target="blank"
+                rel="noopener noreferrer">Products</a>
+        </div>
+        <div class="reviews"><a class="trip" href="https://www.tripadvisor.co.uk/" target="blank"
+                rel="noopener noreferrer">Reviews</a>
+        </div>
+        <div class="treatments"><a class="happy" href="" target="blank" rel="noopener noreferrer">Treatments</a>
+        </div>
+    </section>
+
+    <section class="gallery">
+
+
+        <button id="left"><
+            </button>
+
+                <button id="right">></button>
+
+                <dl class="slideshow">
+
+                    <dt> <img
+                            src="C:\Users\matti\OneDrive\Desktop\coding course content\Carries Lashes\lash website files\carousel images\eyeBlueLash.jpg"
+                            alt="EyeBlueLash"></dt>
+
+                    <dt><img src="C:\Users\matti\OneDrive\Desktop\coding course content\Carries Lashes\lash website files\carousel images\eyeCloseBlue.jpg"
+                            alt="EyeCloseBlue"></dt>
+
+                    <dt><img src="C:\Users\matti\OneDrive\Desktop\coding course content\Carries Lashes\lash website files\carousel images\judy.jpg"
+                            alt="judy"></dt>
+
+                    <dt><img src="C:\Users\matti\OneDrive\Desktop\coding course content\Carries Lashes\lash website files\carousel images\eyeGreenCloseAlien.jpg"
+                            alt="EyeGreenAlien"></dt>
+
+                    <dt><img src="C:\Users\matti\OneDrive\Desktop\coding course content\Carries Lashes\lash website files\carousel images\eyeLashPurple.jpg"
+                            alt="eyeLashPurple"></dt>
+
+                </dl>
+    </section>
+
+    <footer>
+        <h3>Footer</h3>
+
+        <column class="column1">
+
+        </column>
+
+        <column class="column2">
+
+        </column>
+
+        <column class="column3">
+
+        </column>
+
+    </footer>
+
+    <script>
+
+
+
+        let i = 0;
+
+        let node = document.querySelector(".slideshow");
+
+        node.children[i].classList.add("active");
+
+        let right = document.querySelector("#right");
+
+        let left = document.querySelector("#left");
+
+
+
+
+        right.addEventListener("click", function () {
+            node.children[i].classList.remove("active");
+
+            i = i + 1;
+
+            if (i >= node.children.length) {
+                i = 0
+            };
+
+            node.children[i].classList.add("active");
+        });
+
+
+
+        left.addEventListener("click", function () {
+            node.children[i].classList.remove("active");
+
+            i = i - 1;
+
+            if (i < 0) {
+                i = 4;
+            };
+
+            node.children[i].classList.add("active");
+
+        });
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

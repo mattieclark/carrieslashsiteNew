@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kaisei+Opti:wght@700&family=Outfit:wght@400;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/vogue');
+
+@keyframes reveal {
+    from {transform: translateY(-20vh);}
+    to {transform: translateY(0vh);}
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin:0;
+    z-index: -1;
+    font-family: 'Kaisei Opti', serif;
+    
+}
+
+.container {    
+    width: 100vw;   
+    top:0px;
+    left:0px; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+       
+}
+
+#content {
+    position: relative;
+    top:90vh;
+}
+
+h1 {
+    position: relative;
+    /* width: 100vw;
+    height:16vh; */
+    left:-150px;
+    font-family: 'Vogue', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 500;
+    color:rgb(119, 249, 152);
+    mix-blend-mode: screen;
+}
+
+/* #title-img {
+    background-image: url(YoungWomannewTestEdit.png);
+    position: relative;
+    object-position: 25% 50%;
+} */
+
+#nav-bar{      
+    width: 99vw;
+    height: 15vh;
+    padding: 0.5em;    
+    position: sticky;
+    top:0vh;    
+    left:0; 
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0 1px 2px rgb(41, 40, 40);
+    display:none;
+      
+    
+}
+
+/* #title-background img {
+    width:100vw;
+    height:25vh;
+    position: absolute;
+    object-fit: cover;
+    transform: translateY(-90px);
+    z-index: -1;
+    
+    
+} */
+
+#nav-bar.active {
+    display: flex;
+    animation: reveal 0.5s;
+}
+
+#logo img {
+    width: 30%;
+    height:auto;   
+}
+
+#menu-icon {
+   position: absolute;
+   top: 30px;
+   right:50px;
+   color: whitesmoke;
+}
+
+
+#banner img {
+    position: absolute;
+    top:0vh;
+    width: 100vw;
+    height: auto;
+    
+}
+
+#menu:hover .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.nav-menu {
+    display: none;
+    position: absolute;    
+    top: 50px;
+    right: 60px;
+    width: 12vw;
+    height:40vh;
+    padding: 5px;
+    background-color:rgb(188, 188, 188);
+    border-radius: 10px;
+    box-shadow: 1px 2px rgb(33, 48, 37);
+    opacity: 85%;    
+}
+
+
+.nav__list li {
+    list-style: none;
+}
+
+.nav__list a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+
+.nav__list a:hover {
+    color: blueviolet;
+    font-size: larger;
+    transition: 0.2s; 
+}
+
+content {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro {
+    padding: 5% 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#lashes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lashes img {
+    position: relative;
+    width:25vw;
+    height:20vh;
+    top: -20px;
+    left: -50px;
+}
+
+#brows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#brows img {
+    width:50vw;
+    height: 7vh;
+}
+
+#price-list {
+    position: relative;
+    width: 40vw;
+    height:100vh;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background-image: url(bliss-room.png);
+    object-fit: cover;
+    border-radius: 1%; */
+}
+
+#price-list h2 {
+    position: relative;
+    top:5px;
+}
+
+#image-div {
+    width: 30vw;
+    height:80vh;
+    margin: 5%;
+    background-image: url(bliss-room.png);
+    object-fit: cover;
+    border-radius: 1%;
+}
+
+.gallery {
+    width: 75vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: dimgray;
+    border-radius: 1%;
+    box-shadow: 1px 1px rgb(36, 34, 32);
+    z-index: -1;
+}
+
+.slideshow {
+    width:410px;
+    height:410px;
+    display: block;
+}
+
+.slideshow img {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+
+
+.slideshow>* {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.slideshow>*.active {
+    opacity: 1;
+}
+
+button {
+    height:30px;
+    width: 40px;
+}
+
+#left {
+    position: absolute;
+    left:15vw;
+}
+
+#right {
+    position: absolute;
+    right:15vw;
+}
+
+/* #contact {
+    width:100%;
+    height:auto;
+    padding: 2rem 2rem;
+    margin: 1rem;
+    background-color: chartreuse;
+    border-radius: 50px 5px;
+}  */
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width:60vw;
+    height:auto;
+    padding: 2rem 2rem;
+    margin: 1rem;
+    background-color: chartreuse;
+    border-radius: 25px 25px;
+}
+
+.label {
+    position: relative;
+    left:-13rem;
+}
+
+#number {
+    position: relative;
+    left:-10.75rem;
+}
+
+#textBox {
+    position: relative;
+    left: -10.5rem;
+}
+
+.input {
+    width:60%;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#message {
+    height:50px;
+}
+
+#form-submit {
+    width:35%;
+    height:30px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+footer {
+    position: relative;
+    bottom:-100vh;
+    width: 93vw;
+    height: 20vh;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: coral;
+}
+
+#footer-social {
+    position: relative;
+    display: flex;
+    flex-direction: column;   
+    
+} 
+
+.footer__icon {
+    font-size: 2rem;
+}
+
+.footer__icon:hover {
+    transform: scale(120%);
+    transition: 0.5s;
+}
+
+#footer-message {
+    position: relative;
+    left:250px;
+    font-size: 2rem;
+    
+}
+
+#footer-contact {
+    position: relative;
+    right:-400px;
+}
+
+
+#footer-copy{
+    position: relative;
+    bottom: -50px;
+    left:-500px;
+}
+
+

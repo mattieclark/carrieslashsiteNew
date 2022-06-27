@@ -118,6 +118,18 @@ navMenu = document.querySelector(".nav-menu");
 
     });
 
+ let newLine = "\r\n";
+
+let msg = "Hi there!";
+ msg += newLine;
+ msg += "Move cursor to top of page to activate navigation bar";
+
+let onOpen = alert(msg);
+    
+
+function openAlert(){
+    window.open(onOpen)  
+};
 
 
 

@@ -1,4 +1,47 @@
 
+// let i = 0;
+
+// let node = document.querySelector(".slideshow");
+
+// node.children[i].classList.add("active");
+
+// let right = document.querySelector("#right");
+
+// let left = document.querySelector("#left");
+
+
+
+
+// right.addEventListener("click", function () {
+//     node.children[i].classList.remove("active");
+
+//     i = i + 1;
+
+//     if (i >= node.children.length) {
+//         i = 0
+//     };
+
+//     node.children[i].classList.add("active");
+// });
+
+
+
+// left.addEventListener("click", function () {
+//     node.children[i].classList.remove("active");
+
+//     i = i - 1;
+
+//     if (i < 0) {
+//         i = 4;
+//     };
+
+//     node.children[i].classList.add("active");
+
+// });
+
+
+
+
 let i = 0;
 
 let node = document.querySelector(".slideshow");
@@ -12,7 +55,8 @@ let left = document.querySelector("#left");
 
 
 
-right.addEventListener("click", function () {
+right.addEventListener("click", function (){
+   
     node.children[i].classList.remove("active");
 
     i = i + 1;
@@ -26,7 +70,8 @@ right.addEventListener("click", function () {
 
 
 
-left.addEventListener("click", function () {
+left.addEventListener("click", function (){
+    
     node.children[i].classList.remove("active");
 
     i = i - 1;
@@ -38,6 +83,7 @@ left.addEventListener("click", function () {
     node.children[i].classList.add("active");
 
 });
+
 
 
 submit = document.getElementById("form-submit");

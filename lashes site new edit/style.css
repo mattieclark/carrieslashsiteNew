@@ -14,6 +14,7 @@ body {
     margin:0;
     z-index: -1;
     font-family: 'Kaisei Opti', serif;
+    background-color: rgb(231, 231, 231);
     
 }
 
@@ -30,7 +31,8 @@ body {
 
 #content {
     position: relative;
-    top:90vh;
+    top:99vh;
+    overflow: hidden;
 }
 
 h1 {
@@ -63,6 +65,7 @@ h1 {
     top:0vh;    
     left:0; 
     background-image: url(pageImages/glitterBanner.png);
+    filter: brightness(150%);
     background-position: center;
     object-fit: fill;
     display: flex;
@@ -116,6 +119,7 @@ h1 {
     
 }
 
+
 #menu:hover .nav-menu {
     display: flex;
     flex-direction: column;
@@ -130,7 +134,10 @@ h1 {
     right: 60px;
     width: 12vw;
     height:40vh;
-    padding: 5px;
+    /* padding: 5px; */
+    justify-content: center;
+    filter: brightness(75%);
+
     background-color:rgb(188, 188, 188);
     border-radius: 10px;
     box-shadow: 1px 2px rgb(33, 48, 37);
@@ -142,17 +149,24 @@ h1 {
     list-style: none;
 }
 
+.nav__item:hover {
+    background-color: rgb(167, 166, 166);
+    width:100%;
+}
+
 .nav__list a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: large;
 }
 
-.nav__list a:hover {
+.nav__list a:hover {    
     color: blueviolet;
     font-size: larger;
     transition: 0.2s; 
 }
+
+
 
 content {
     padding-left: 15vw;
@@ -163,11 +177,31 @@ content {
 }
 
 #intro {
-    padding: 5% 20%;
+    
+    
+    padding: 0% 5% 15% 15%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    color: rgb(0, 0, 0);
+    /* background-color: whiteblack; */
+    /* z-index: -1; */
+
+}
+
+.quote {
+    position: absolute;
+    left: 25%;
+    top:32%;
+    font-size: 2.5rem;
+    color:rgb(26, 26, 26);
+    
+}
+
+#about {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 #lashes {
@@ -209,8 +243,37 @@ content {
 }
 
 #price-list h2 {
+     position: relative;
+    top:5px; 
+} 
+
+button {
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgb(205, 205, 206);
+    border: 1.5px solid rgb(46, 44, 50);
+} 
+/* 
+#right {
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid black; 
+}
+
+#left {
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid black; 
+}  */
+
+#gallery h2 {
     position: relative;
-    top:5px;
+    left:45%;
+    
+    
 }
 
 
@@ -267,14 +330,17 @@ button {
     right:15vw;
 }
 
-/* #contact {
-    width:100%;
-    height:auto;
-    padding: 2rem 2rem;
-    margin: 1rem;
-    background-color: chartreuse;
-    border-radius: 50px 5px;
-}  */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+#reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 form {
     position: relative;
@@ -341,7 +407,7 @@ footer {
     background-image: url(pageImages/glitterBanner.png);
     object-fit: fill;
     /* background-color: coral; */
-    filter: brightness(200%);
+    filter: brightness(400%);
     overflow: hidden;
 }
 
@@ -414,5 +480,4 @@ footer {
     color: white;
     /* mix-blend-mode: multiply; */
 } 
-
 

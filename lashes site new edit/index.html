@@ -169,16 +169,16 @@
                 <h3>Enquiry from</h3>
                 <form name="contact" method="POST" data-netlify="true">
                     <label class="label" for="name">Name</label>
-                    <input class="input" type="text" id="name" value="Name"><br>
+                    <input name="name" class="input" type="text" id="name" value="Name"><br>
                     <label class="label" id="number" for="contact-number"> Contact Number</label>
-                    <input class="input" type="number" id="tel"><br>
+                    <input name="phone" class="input" type="number" id="tel"><br>
                     <label class="label" for="email">Email</label>
-                    <input class="input" type="email" id="email" value="myemail@something.com"><br>
+                    <input name="email" class="input" type="email" id="email" value="myemail@something.com"><br>
                     <label class="label" id="textBox" for="message"> Enquiry message</label>
-                    <textarea class="input" id="message" type="text"
+                    <textarea name="enquiry" class="input" id="message" type="text"
                         value="Please let me know which products you would are interested in here"></textarea><br><br>
 
-                    <input id="form-submit" type="submit" value="Submit"><br>
+                    <input name="submit" id="form-submit" type="submit" value="Submit"><br>
                 </form>
 
             </section>

@@ -271,7 +271,7 @@ content {
 #intro p {
     /* font-family:'Spirax', cursive; */
     font-family:'Dancing Script', cursive;
-    font-size: larger;
+    font-size:x-large;
 }
 
 @media only screen and (max-width:600px){

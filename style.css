@@ -421,7 +421,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: dimgray;
+    background-color: rgb(173, 165, 165);
     border-radius: 1%;
     box-shadow: 1px 1px rgb(36, 34, 32);
     z-index: -1;

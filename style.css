@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kaisei+Opti:wght@700&family=Outfit:wght@400;700&display=swap');
 @import url('http://fonts.cdnfonts.com/css/vogue');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kaisei+Opti:wght@700&family=Outfit:wght@400;700&family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaisei+Opti:wght@700&family=Outfit:wght@400;700&family=Raleway:ital,wght@1,300&family=Spirax&display=swap');
 
 @keyframes reveal {
     from {transform: translateY(-20vh);}
@@ -256,14 +256,22 @@ content {
 #intro {
     
     
-    padding: 5% 5% 15% 15%; 
+    padding-top: 7%;
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;  
+ 
+    
     /* color: rgb(0, 0, 0); */
     /* background-color: whiteblack; */
     /* z-index: -1; */
 
+}
+
+#intro p {
+    /* font-family:'Spirax', cursive; */
+    font-family:'Dancing Script', cursive;
+    font-size: larger;
 }
 
 @media only screen and (max-width:600px){

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kaisei+Opti:wght@700&family=Outfit:wght@400;700&display=swap');
 @import url('http://fonts.cdnfonts.com/css/vogue');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kaisei+Opti:wght@700&family=Outfit:wght@400;700&family=Raleway:ital,wght@1,300&display=swap');
 
 @keyframes reveal {
     from {transform: translateY(-20vh);}
@@ -11,24 +12,33 @@ html {
 }
 
 body {
+    width: 100vw;
+    overflow-x: clip;
     margin:0;
     z-index: -1;
     font-family: 'Kaisei Opti', serif;
-    background-color: rgb(231, 231, 231);
+    color: #332e3f;
+    /* color: #783e4c; */
+    background-color: #FAE7E3;
+    
+    
+    
     
 }
 
+p {
+    font-family: 'Raleway', sans-serif;;
+}
 .container {    
     width: 100vw;  
     height:fit-content; 
     top:0px;
     left:0px; 
-    overflow: hidden;
+    overflow-x: clip;
     display: flex;
     flex-direction: column;
-    
-       
-}
+    /* background-image: url(pageImages/bliss-room.png);  */
+  }
 
 /* @media only screen and (max-width:600px){
     .container {
@@ -36,10 +46,21 @@ body {
     }
 } */
 
+#container-image {
+    position:absolute;
+    width:100vw;
+    height: 850vh;
+    /* background-color: aqua; */
+    background-image: url(pageImages/bliss-room.png);
+    background-size:100% 100%;
+    /* object-fit: fill; */
+    opacity: 0.25;
+}
+
 #content {
     position: relative;
     top:99vh;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 @media only screen and (max-width:600px){
@@ -51,17 +72,17 @@ body {
 h1 {
     position: absolute;
     width: 100vw;
-    height:13vh;
-    text-align: center;
-    
+    height:11.5vh;
+    text-align: center;    
     left:0px;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
     /* font-family: 'Vogue', sans-serif; */
+    font-family: 'Kaisei Opti', serif;
     font-size: 4.5rem;
     font-weight: 400;
     color:white;
-    background: rgb(30, 30, 30);
+    background: rgb(121, 81, 71);
     mix-blend-mode: multiply;
     
 }
@@ -91,7 +112,7 @@ h1 {
     padding: 0.5em;    
     position: sticky;
     top:0vh;    
-    left:0; 
+    left:0px; 
     background-image: url(pageImages/glitterBanner.png);
     filter: brightness(150%);
     background-position: center;
@@ -99,7 +120,7 @@ h1 {
     display: flex;
     flex-direction: row;     
     align-items: center;
-    /* overflow-x: hidden; */
+    /* overflow-x: clip; */
     z-index: 1;
     box-shadow: 0 1px 2px rgb(41, 40, 40);
     display:none;      
@@ -134,7 +155,7 @@ h1 {
 
 #logo img {
     position: relative;
-    left:10px;
+    left:0px;
     width: 7vw;
     height:auto; 
     z-index: 2;
@@ -190,7 +211,7 @@ h1 {
     right: 60px;
     width: 12vw;
     height:40vh;
-    /* padding: 5px; */
+    padding: 5px;
     justify-content: center;
     filter: brightness(75%);
 
@@ -239,7 +260,7 @@ content {
     display: flex;
     flex-direction: column;
     align-items: center;   
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
     /* background-color: whiteblack; */
     /* z-index: -1; */
 
@@ -569,6 +590,63 @@ form {
     border: 1px solid black;
 }
 
+#certificates {
+    margin-bottom: 10%;
+}
+
+#certificates h3 {
+   position: relative; 
+   display: flex;
+   justify-content: center;
+}
+
+#certificate-thumbs {
+    width:90vw;
+    height:90vh;
+    /* background-color: rgb(252, 200, 220); */
+    position: relative;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cert-img-container {
+    position: relative;
+    margin: 2%;
+    height:200px;
+    width:200px;
+    /* background-color: rgb(201, 13, 201);   */
+    contain: content;
+    object-fit: contain;
+
+}
+
+.cert-img-container:hover {
+    position: relative;
+    margin: 2%;
+    height:350px;
+    width:350px;
+    /* background-color: rgb(201, 13, 201);   */
+    contain: content;
+    object-fit: contain;
+
+    transition: 0.5s;
+}
+
+#certificate-thumbs img {
+    position: relative;
+    width: 70%;
+}
+
+
+
+
+   
+
+
+
 
 footer {
     position: relative;
@@ -604,7 +682,7 @@ footer {
     position: relative;
     bottom:-20px;
     width: 94%;
-    height: 21vh;
+    height: 20vh;
     padding-top: 2%;
     padding-bottom: 1%;
     padding-left: 3%;
@@ -613,7 +691,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(36, 21, 19);
     mix-blend-mode: multiply;
     
 }

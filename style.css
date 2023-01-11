@@ -13,6 +13,7 @@ html {
 
 body {
     width: 100vw;
+    height: fit-content;
     overflow-x: clip;
     margin:none;
     z-index: -1;
@@ -64,7 +65,7 @@ p {
 
 #content {
     position: relative;
-    top:99vh;
+    top:100vh;
     overflow-x: clip;
 }
 
@@ -625,9 +626,9 @@ form {
     border: 1px solid black;
 }
 
-#certificates {
-    margin-bottom: 10%;
-}
+/* #certificates {
+    margin-bottom: 5%;
+} */
 
 #certificates h3 {
    position: relative; 
@@ -636,15 +637,23 @@ form {
 }
 
 #certificate-thumbs {
-    width:90vw;
-    height:90vh;
+    width:100vw;
+    height:70vh;
     /* background-color: rgb(252, 200, 220); */
     position: relative;
     justify-self: center;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
+}
+
+.cert_row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
 }
 
 .cert-img-container {
@@ -661,8 +670,8 @@ form {
 .cert-img-container:hover {
     position: relative;
     margin: 2%;
-    height:350px;
-    width:350px;
+    height:250px;
+    width:250px;
     /* background-color: rgb(201, 13, 201);   */
     contain: content;
     object-fit: contain;
@@ -679,8 +688,8 @@ form {
 
 footer {
     position: relative;
-    margin: none;
-    bottom:-100vh;
+    margin-top: 2%;
+    bottom: -120vh;
     width: 100vw;
     height: 35vh;
     /* padding-top: 2%;
@@ -695,9 +704,10 @@ footer {
     object-fit: fill; */
     /* background-color: coral; */
     /* filter: brightness(400%); */
-    background-color: rgba(222, 142, 193, 0.187);
+    background-color: rgba(222, 142, 193, 0.258);
     overflow: hidden;
     box-shadow: 0 2px 2px rgb(56, 55, 55);
+    z-index: 1;
 }
 
 @media only screen and (max-width:600px) {

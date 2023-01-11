@@ -72,7 +72,7 @@ banner = document.getElementById("nav-bar");
 
 (function () {
     function getPosition(e) {
-        if (e.clientY > 150) {
+        if (e.clientY > 300) {
             banner.classList.remove("active")
         }
     }

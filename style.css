@@ -200,7 +200,7 @@ h1 {
 #banner img {
     position: absolute;
     top:-5vh;
-    width: 105vw;
+    width: 100vw;
     height: auto;
     
 }
@@ -678,6 +678,7 @@ form {
 
 footer {
     position: relative;
+    margin: none;
     bottom:-100vh;
     width: 100vw;
     height: 35vh;

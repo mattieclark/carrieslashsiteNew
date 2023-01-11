@@ -14,7 +14,7 @@ html {
 body {
     width: 100vw;
     overflow-x: clip;
-    margin:0;
+    margin:none;
     z-index: -1;
     font-family: 'Kaisei Opti', serif;
     color: #332e3f;
@@ -37,6 +37,7 @@ p {
     overflow-x: clip;
     display: flex;
     flex-direction: column;
+    overflow-x: clip;
     
     /* background-image: url(pageImages/bliss-room.png);  */
   }

@@ -37,6 +37,7 @@ p {
     overflow-x: clip;
     display: flex;
     flex-direction: column;
+    
     /* background-image: url(pageImages/bliss-room.png);  */
   }
 
@@ -49,7 +50,7 @@ p {
 #container-image {
     position:absolute;
     width:100vw;
-    height: 877vh;
+    height: 860vh;
     /* background-color: aqua; */
     background-image: url(pageImages/bliss-room.png);
     background-size:100% 100%;

@@ -85,7 +85,7 @@ h1 {
     font-style: italic;
     /* color:white; */
     /* color: rgb(33, 130, 111); */
-    background: -webkit-linear-gradient(rgb(4, 142, 115), rgb(113, 48, 218));
+    background: -webkit-linear-gradient(rgb(148, 235, 228), rgb(8, 95, 85));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
@@ -132,7 +132,7 @@ h1 {
     align-items: center;
     /* overflow-x: clip; */
     z-index: 1;
-    box-shadow: 0 5px 5px rgb(41, 40, 40);
+    box-shadow: 0 2px 2px rgb(56, 55, 55);
     display:none;      
     
 }

@@ -72,18 +72,23 @@ p {
 h1 {
     position: absolute;
     width: 100vw;
-    height:11.5vh;
-    text-align: center;    
+    height:15vh;
+    text-align: center; 
+    align-items: center;   
     left:0px;
     padding-top: 1rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     /* font-family: 'Vogue', sans-serif; */
     font-family: 'Kaisei Opti', serif;
     font-size: 4.5rem;
     font-weight: 400;
-    color:white;
+    font-style: italic;
+    /* color:white; */
+    color: black;
+
     background: rgb(121, 81, 71);
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
+    
     
 }
 
@@ -108,7 +113,7 @@ h1 {
 
 #nav-bar{      
     width: 100vw;
-    height: 15vh;
+    height: 17vh;
     padding: 0.5em;    
     position: sticky;
     top:0vh;    
@@ -123,7 +128,7 @@ h1 {
     align-items: center;
     /* overflow-x: clip; */
     z-index: 1;
-    box-shadow: 0 1px 2px rgb(41, 40, 40);
+    box-shadow: 0 5px 5px rgb(41, 40, 40);
     display:none;      
     
 }

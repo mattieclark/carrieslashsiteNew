@@ -70,6 +70,15 @@ banner = document.getElementById("nav-bar");
     document.addEventListener('mousemove', getPosition, false);
 })();
 
+(function () {
+    function getPosition(e) {
+        if (e.clientY > 150) {
+            banner.classList.remove("active")
+        }
+    }
+
+    document.addEventListener('mousemove', getPosition, false);
+})();
 
 navMenu = document.querySelector(".nav-menu");
 

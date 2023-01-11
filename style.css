@@ -50,13 +50,16 @@ p {
 #container-image {
     position:absolute;
     width:100vw;
+    /* height:100vh; */
     height: 860vh;
     /* background-color: aqua; */
     background-image: url(pageImages/bliss-room.png);
     background-size:100% 100%;
     /* object-fit: fill; */
     opacity: 0.25;
+    background-attachment: fixed;
 }
+    
 
 #content {
     position: relative;

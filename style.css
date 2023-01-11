@@ -113,7 +113,8 @@ h1 {
     position: sticky;
     top:0vh;    
     left:0px; 
-    background-image: url(pageImages/glitterBanner.png);
+    /* background-image: url(pageImages/glitterBanner.png); */
+    background-color: aliceblue;
     filter: brightness(150%);
     background-position: center;
     object-fit: fill;

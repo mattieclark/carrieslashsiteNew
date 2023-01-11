@@ -84,9 +84,13 @@ h1 {
     font-weight: 400;
     font-style: italic;
     /* color:white; */
-    color: rgb(33, 130, 111);
+    /* color: rgb(33, 130, 111); */
+    background: -webkit-linear-gradient(rgb(4, 142, 115), rgb(113, 48, 218));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 
-    background: rgb(121, 81, 71);
+    /* background: rgb(121, 81, 71); */
     /* mix-blend-mode: multiply; */
     
     
@@ -119,7 +123,7 @@ h1 {
     top:0vh;    
     left:0px; 
     /* background-image: url(pageImages/glitterBanner.png); */
-    background-color: aliceblue;
+    background-color: rgba(222, 142, 193, 0.187);
     filter: brightness(150%);
     background-position: center;
     object-fit: fill;

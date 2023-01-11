@@ -182,7 +182,8 @@ h1 {
    position: absolute;
    top: 30px;
    right:50px;
-   color: whitesmoke;
+   /* color: rgb(245, 245, 245); */
+   color:rgb(111, 223, 196);
 }
 
 @media only screen and (max-width:600px) {
@@ -225,7 +226,7 @@ h1 {
     justify-content: center;
     filter: brightness(75%);
 
-    background-color:rgb(188, 188, 188);
+    background-color:rgb(177, 160, 160);
     border-radius: 10px;
     box-shadow: 1px 2px rgb(33, 48, 37);
     opacity: 85%;    
@@ -243,7 +244,7 @@ h1 {
 
 .nav__list a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(32, 21, 21);
     font-size: large;
 }
 

@@ -3,8 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaisei+Opti:wght@700&family=Outfit:wght@400;700&family=Raleway:ital,wght@1,300&family=Spirax&display=swap');
 
 @keyframes reveal {
-    from {transform: translateY(-20vh);}
-    to {transform: translateY(0vh);}
+    from {
+        transform: translateY(-20vh);
+    }
+
+    to {
+        transform: translateY(0vh);
+    }
 }
 
 html {
@@ -15,33 +20,43 @@ body {
     width: 100vw;
     height: fit-content;
     overflow-x: clip;
-    margin:none;
+    margin: none;
     z-index: -1;
     font-family: 'Kaisei Opti', serif;
     color: #332e3f;
     /* color: #783e4c; */
     background-color: #FAE7E3;
-    
-    
-    
-    
+
+
+    /* 
+    background-image: url(pageImages/bliss-room.png);
+    background-size:100% 100%;
+   
+
+    background-attachment: fixed;   
+     */
+
 }
 
 p {
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
+    ;
 }
-.container {    
-    width: 100vw;  
-    height:fit-content; 
-    top:0px;
-    left:0px; 
+
+.container {
+    width: 100vw;
+    height: fit-content;
+    /* height: 855vh; */
+    top: 0px;
+    left: 0px;
     overflow-x: clip;
     display: flex;
     flex-direction: column;
     overflow-x: clip;
-    
+    opacity: 1;
+
     /* background-image: url(pageImages/bliss-room.png);  */
-  }
+}
 
 /* @media only screen and (max-width:600px){
     .container {
@@ -50,38 +65,54 @@ p {
 } */
 
 #container-image {
-    position:absolute;
-    width:100vw;
-    /* height:100vh; */
-    height: 860vh;
-    /* background-color: aqua; */
+    position: absolute;
+    width: 100vw;
+    height: 750vh;
+    /* height: 855vh;  */
     background-image: url(pageImages/bliss-room.png);
-    background-size:100% 100%;
-    /* object-fit: fill; */
+    background-size: 100% 100%;
+    object-fit: fill;
     opacity: 0.25;
+
     background-attachment: fixed;
+
 }
-    
+
+@media only screen and (min-width:1400px) {
+    #container-image {
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        background-image: url(pageImages/bliss-room.png);
+        background-size: 100% 100%;
+        object-fit: fill;
+        opacity: 0.25;
+
+        background-attachment: fixed;
+    }
+
+}
+
 
 #content {
     position: relative;
-    top:100vh;
+    top: 100vh;
     overflow-x: clip;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px) {
     #content {
-        top:35vh;
+        top: 35vh;
     }
 }
 
 h1 {
     position: absolute;
     width: 100vw;
-    height:15vh;
-    text-align: center; 
-    align-items: center;   
-    left:0px;
+    height: 15vh;
+    text-align: center;
+    align-items: center;
+    left: 0px;
     padding-top: 1rem;
     padding-bottom: 1rem;
     /* font-family: 'Vogue', sans-serif; */
@@ -94,23 +125,23 @@ h1 {
     background: -webkit-linear-gradient(rgb(148, 235, 228), rgb(8, 95, 85));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
 
     /* background: rgb(121, 81, 71); */
     /* mix-blend-mode: multiply; */
-    
-    
+
+
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 600px) {
     h1 {
         /* padding-top:2vh;
         padding-bottom: 1vh; */
-        font-size: 1.75rem; 
-        height: 9vh;  
-        top:-40px;    
+        font-size: 1.75rem;
+        height: 9vh;
+        top: -40px;
     }
-    
+
 }
 
 /* #title-img {
@@ -119,37 +150,37 @@ h1 {
     object-position: 25% 50%;
 } */
 
-    
 
-#nav-bar{      
+
+#nav-bar {
     width: 100vw;
     height: 17vh;
-    padding: 0.5em;    
+    padding: 0.5em;
     position: sticky;
-    top:0vh;    
-    left:0px; 
+    top: 0vh;
+    left: 0px;
     /* background-image: url(pageImages/glitterBanner.png); */
     background-color: rgba(222, 142, 193, 0.187);
     filter: brightness(150%);
     background-position: center;
     object-fit: fill;
     display: flex;
-    flex-direction: row;     
+    flex-direction: row;
     align-items: center;
     /* overflow-x: clip; */
     z-index: 1;
     box-shadow: 0 2px 2px rgb(56, 55, 55);
-    display:none;      
-    
+    display: none;
+
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 600px) {
     #nav-bar {
         display: block;
-        width:95vw;
-        top:0vh;
-        height:10vh;  
-        object-fit: fill;  
+        width: 95vw;
+        top: 0vh;
+        height: 10vh;
+        object-fit: fill;
     }
 }
 
@@ -169,27 +200,29 @@ h1 {
     animation: reveal 0.5s;
 }
 
+
+
 #logo img {
     position: relative;
-    left:0px;
+    left: 0px;
     width: 7vw;
-    height:auto; 
+    height: auto;
     z-index: 2;
-      
+
 }
 
 @media only screen and (max-width:600px) {
     #logo img {
-        display:none;
+        display: none;
     }
 }
 
 #menu-icon {
-   position: absolute;
-   top: 30px;
-   right:50px;
-   /* color: rgb(245, 245, 245); */
-   color:rgb(111, 223, 196);
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    /* color: rgb(245, 245, 245); */
+    color: rgb(111, 223, 196);
 }
 
 @media only screen and (max-width:600px) {
@@ -201,15 +234,15 @@ h1 {
 
 #banner img {
     position: absolute;
-    top:-5vh;
+    top: -5vh;
     width: 100vw;
     height: auto;
-    
+
 }
 
 @media only screen and (max-width:600px) {
     #banner img {
-       top: 10vh;
+        top: 10vh;
     }
 }
 
@@ -223,19 +256,19 @@ h1 {
 
 .nav-menu {
     display: none;
-    position: absolute;    
+    position: absolute;
     top: 50px;
     right: 60px;
     width: 12vw;
-    height:40vh;
+    height: 40vh;
     padding: 5px;
     justify-content: center;
     filter: brightness(75%);
 
-    background-color:rgb(177, 160, 160);
+    background-color: rgb(177, 160, 160);
     border-radius: 10px;
     box-shadow: 1px 2px rgb(33, 48, 37);
-    opacity: 85%;    
+    opacity: 85%;
 }
 
 
@@ -245,7 +278,7 @@ h1 {
 
 .nav__item:hover {
     background-color: rgb(167, 166, 166);
-    width:100%;
+    width: 100%;
 }
 
 .nav__list a {
@@ -254,10 +287,10 @@ h1 {
     font-size: large;
 }
 
-.nav__list a:hover {    
+.nav__list a:hover {
     color: blueviolet;
     font-size: larger;
-    transition: 0.2s; 
+    transition: 0.2s;
 }
 
 
@@ -271,15 +304,15 @@ content {
 }
 
 #intro {
-    
+
     margin-bottom: 7%;
     padding-top: 7%;
     display: flex;
     flex-direction: column;
-    align-items: center;  
-    
- 
-    
+    align-items: center;
+
+
+
     /* color: rgb(0, 0, 0); */
     /* background-color: whiteblack; */
     /* z-index: -1; */
@@ -288,11 +321,11 @@ content {
 
 #intro p {
     /* font-family:'Spirax', cursive; */
-    font-family:'Dancing Script', cursive;
-    font-size:x-large;
+    font-family: 'Dancing Script', cursive;
+    font-size: x-large;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px) {
     #intro {
         margin-top: 15vh;
         /* margin-bottom: 7%; */
@@ -302,14 +335,14 @@ content {
 .quote {
     position: absolute;
     left: 25%;
-    top:32%;
+    top: 32%;
     font-size: 2.5rem;
-    color:rgb(26, 26, 26);    
+    color: rgb(26, 26, 26);
 }
 
-@media only screen and (max-width:600px){
-    .quote{
-        left:10%;
+@media only screen and (max-width:600px) {
+    .quote {
+        left: 10%;
         font-size: 1.25rem;
         top: 20%;
     }
@@ -329,16 +362,16 @@ content {
 
 #lashes img {
     position: relative;
-    width:25vw;
-    height:20vh;
+    width: 25vw;
+    height: 20vh;
     top: -20px;
     left: -50px;
 }
 
 @media only screen and (max-width:600px) {
     #lashes img {
-        width:50vw;
-        left:0px;
+        width: 50vw;
+        left: 0px;
     }
 }
 
@@ -352,40 +385,40 @@ content {
 
 @media only screen and (max-width:600px) {
     #brows {
-        width:80vw;
+        width: 80vw;
 
-            
+
     }
 }
 
 #brows img {
-    width:50vw;
+    width: 50vw;
     height: 7vh;
 }
 
 @media only screen and (max-width:600px) {
     #brows img {
-        width:100vw;
-        
+        width: 100vw;
+
     }
 }
 
 #price-list {
     position: relative;
     width: 40vw;
-    height:100vh;
+    height: 100vh;
     /* margin: 5%; */
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: space-between; */
-    
+
 }
 
 @media only screen and (max-width:600px) {
     #price-list {
         width: 90vw;
-        height:50vh;
+        height: 50vh;
         justify-content: flex-start;
     }
 }
@@ -393,7 +426,7 @@ content {
 #price-list h2 {
     position: relative;
     /* top:5px;  */
-} 
+}
 
 
 
@@ -403,7 +436,8 @@ button {
     border-radius: 50%;
     background-color: rgb(205, 205, 206);
     border: 1.5px solid rgb(46, 44, 50);
-} 
+}
+
 /* 
 #right {
     font-size: 1.5rem;
@@ -421,20 +455,20 @@ button {
 
 #gallery h2 {
     position: relative;
-    left:45%;    
-    
+    left: 45%;
+
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px) {
     #gallery h2 {
-        top:20vh;
+        top: 20vh;
     }
 }
 
 
 
 .gallery {
-    
+
     width: 75vw;
     height: 80vh;
     display: flex;
@@ -449,18 +483,18 @@ button {
 @media only screen and (max-width:600px) {
     .gallery {
         position: relative;
-        width:100vw;
-        height:20vh;
-        top: 20vh;        
+        width: 100vw;
+        height: 20vh;
+        top: 20vh;
         background-color: rgb(231, 231, 231);
         box-shadow: none;
-    
+
     }
 }
 
 .slideshow {
-    width:410px;
-    height:410px;
+    width: 410px;
+    height: 410px;
     /* display: block; */
 }
 
@@ -475,11 +509,11 @@ button {
 }
 
 @media only screen and (max-width:600px) {
-    .slideshow img{
-       top: 0vh;
-       width:380px;
-       height:380px;
-       left: 5vw;
+    .slideshow img {
+        top: 0vh;
+        width: 380px;
+        height: 380px;
+        left: 5vw;
     }
 }
 
@@ -495,16 +529,16 @@ button {
 }
 
 button {
-    height:30px;
+    height: 30px;
     width: 40px;
 }
 
 #left {
     position: absolute;
-    left:15vw;
+    left: 15vw;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px) {
     #left {
         display: none;
     }
@@ -512,10 +546,10 @@ button {
 
 #right {
     position: absolute;
-    right:15vw;
+    right: 15vw;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px) {
     #right {
         display: none;
     }
@@ -525,7 +559,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-} 
+}
 
 #Reviews {
     position: relative;
@@ -542,10 +576,10 @@ button {
     justify-content: center;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px) {
     #reviews {
         position: relative;
-        top:75vh;
+        top: 75vh;
     }
 }
 
@@ -556,8 +590,8 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:60vw;
-    height:auto;
+    width: 60vw;
+    height: auto;
     padding: 2rem 2rem;
     margin: 1rem;
     background-color: chartreuse;
@@ -566,7 +600,7 @@ form {
     border-radius: 25px 25px;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px) {
     #contact {
         position: relative;
         margin-top: 10vh;
@@ -576,24 +610,24 @@ form {
 
 .label {
     position: relative;
-    left:-13rem;
+    left: -13rem;
 }
 
 @media only screen and (max-width:600px) {
     .label {
-        left:0px;
+        left: 0px;
     }
 }
 
 
 #number {
     position: relative;
-    left:-10.75rem;
+    left: -10.75rem;
 }
 
 @media only screen and (max-width:600px) {
     #number {
-        left:0px;
+        left: 0px;
     }
 }
 
@@ -604,24 +638,24 @@ form {
 
 @media only screen and (max-width:600px) {
     #textBox {
-        left:0px;
+        left: 0px;
     }
 }
 
 .input {
-    width:60%;
+    width: 60%;
     height: 25px;
     border: 1px solid black;
     border-radius: 5px;
 }
 
 #message {
-    height:50px;
+    height: 50px;
 }
 
 #form-submit {
-    width:35%;
-    height:30px;
+    width: 35%;
+    height: 30px;
     border-radius: 5px;
     border: 1px solid black;
 }
@@ -631,14 +665,14 @@ form {
 } */
 
 #certificates h3 {
-   position: relative; 
-   display: flex;
-   justify-content: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 #certificate-thumbs {
-    width:100vw;
-    height:70vh;
+    width: 100vw;
+    height: 70vh;
     /* background-color: rgb(252, 200, 220); */
     position: relative;
     justify-self: center;
@@ -659,8 +693,8 @@ form {
 .cert-img-container {
     position: relative;
     margin: 2%;
-    height:200px;
-    width:200px;
+    height: 200px;
+    width: 200px;
     /* background-color: rgb(201, 13, 201);   */
     contain: content;
     object-fit: contain;
@@ -670,8 +704,8 @@ form {
 .cert-img-container:hover {
     position: relative;
     margin: 2%;
-    height:250px;
-    width:250px;
+    height: 250px;
+    width: 250px;
     /* background-color: rgb(201, 13, 201);   */
     contain: content;
     object-fit: contain;
@@ -713,8 +747,8 @@ footer {
 @media only screen and (max-width:600px) {
     footer {
         width: 100vw;
-        height:30vh;
-        bottom:-65vh;
+        height: 30vh;
+        bottom: -65vh;
         overflow: hidden;
 
     }
@@ -722,7 +756,7 @@ footer {
 
 #mixEffect {
     position: relative;
-    bottom:-20px;
+    bottom: -20px;
     width: 94%;
     height: 20vh;
     padding-top: 2%;
@@ -733,7 +767,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  
+
     /* background-color: rgb(36, 21, 19);
     mix-blend-mode: multiply;
      */
@@ -742,7 +776,7 @@ footer {
 @media only screen and (max-width:600px) {
     #mixEffect {
         width: 100vw;
-        height:inherit;
+        height: inherit;
         overflow: hidden;
     }
 }
@@ -750,16 +784,16 @@ footer {
 #footer-social {
     position: relative;
     display: flex;
-    flex-direction: column;   
-    
-} 
+    flex-direction: column;
+
+}
 
 @media only screen and (max-width:600px) {
     #footer-social {
-        top:-15px;
+        top: -15px;
         left: 7vw;
         flex-direction: row;
-               
+
 
     }
 }
@@ -776,7 +810,7 @@ footer {
     background: -webkit-linear-gradient(rgb(148, 235, 228), rgb(8, 95, 85));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
 }
 
 .footer__icon:hover {
@@ -788,7 +822,7 @@ footer {
     position: relative;
     top: 0.75rem;
     text-align: center;
-    left:250px;
+    left: 250px;
     font-size: 4rem;
     /* background-color: black; */
     /* color: rgb(1, 255, 162); */
@@ -796,8 +830,8 @@ footer {
     background: -webkit-linear-gradient(rgb(148, 235, 228), rgb(8, 95, 85));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-    
+
+
 }
 
 @media only screen and (max-width:600px) {
@@ -809,43 +843,42 @@ footer {
 
 #footer-contact {
     position: relative;
-    right:-300px;
+    right: -300px;
     font-size: 1.4rem;
-    top:1rem;
+    top: 1rem;
     /* background-color: black; */
     /* color:  rgb(1, 255, 162); */
     /* mix-blend-mode: multiply; */
     background: -webkit-linear-gradient(rgb(8, 202, 186), rgb(8, 95, 85));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
 }
 
 @media only screen and (max-width:600px) {
     #footer-contact {
-       right:10vw;
-       top: -5vh;
-       font-size: 1rem;
+        right: 10vw;
+        top: -5vh;
+        font-size: 1rem;
     }
 }
 
 
-#footer-copy{
+#footer-copy {
     position: relative;
     bottom: -4rem;
-    left:-500px;
+    left: -500px;
     /* background-color: black; */
     /* color: white; */
     /* mix-blend-mode: multiply; */
     background: -webkit-linear-gradient(rgb(148, 235, 228), rgb(8, 95, 85));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-} 
 
-@media only screen and (max-width:600px){
+}
+
+@media only screen and (max-width:600px) {
     #footer-copy {
         display: none;
     }
 }
-

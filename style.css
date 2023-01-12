@@ -698,8 +698,8 @@ form {
 .cert-img-container:hover {
     position: relative;
     margin: 2%;
-    height: 250px;
-    width: 250px;
+    height: 210px;
+    width: 210px;
     /* background-color: rgb(201, 13, 201);   */
     contain: content;
     object-fit: contain;

@@ -229,8 +229,9 @@ h1 {
 #banner img {
     position: absolute;
     top: -5vh;
-    width: 100vw;
-    height: auto;
+    left: -5vw;
+    /* width: 100vw; */
+    height: 105vh;
 
 }
 
@@ -685,7 +686,7 @@ form {
 }
 
 .cert-img-container {
-    position: relative;
+    position: relative; 
     margin: 2%;
     height: 200px;
     width: 200px;
@@ -697,7 +698,6 @@ form {
 
 .cert-img-container:hover {
     position: relative;
-    margin: 2%;
     height: 210px;
     width: 210px;
     /* background-color: rgb(201, 13, 201);   */

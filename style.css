@@ -38,6 +38,8 @@ p {
 .container {
     width: 100vw;
     height: fit-content;
+    padding: 0%;
+    margin: 0%;
     /* height: 855vh; */
     top: 0px;
     left: 0px;

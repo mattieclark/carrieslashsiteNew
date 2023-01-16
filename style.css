@@ -619,7 +619,7 @@ button {
 @media only screen and (max-width:600px) {
     #Reviews {
         position: relative;
-        /* top: 60vh; */
+        top: 10vh;
         
     }
 }

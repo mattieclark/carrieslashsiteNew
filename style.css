@@ -454,7 +454,7 @@ content {
     #price-list {
         position: relative;
         margin-top: 10%;
-        margin-bottom:10%;
+        margin-bottom:20vh;
         width: 90vw;
         height: 50vh;
         justify-content: flex-start;
@@ -507,7 +507,7 @@ button {
    #gallery {
     position: relative;  
     height: 80vh;
-    /* top: 10vh;   */
+    top: 10vh;  
     margin-top: 5%;
 }}
 

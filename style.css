@@ -506,7 +506,7 @@ button {
 @media only screen and (max-width:600px) {
    section#gallery {
     position: relative;  
-    top: 0%;  
+    top: 10%;  
     margin-top: 10%;
 }}
 

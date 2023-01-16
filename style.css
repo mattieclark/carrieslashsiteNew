@@ -758,6 +758,7 @@ form {
 @media only screen and (max-width:900px) {
     #certificates {
         position: relative;
+        height: 150vh;
         top: 60vh;
         margin-top: 10%;
         margin-bottom: 5%;
@@ -861,6 +862,7 @@ footer {
         width: 100vw;
         height: 40vh;
         top: 250vh;
+        left:5vw;
         overflow: hidden;
 
     }
@@ -954,7 +956,7 @@ footer {
 
 @media only screen and (max-width:900px) {
     #footer-message {
-        display: none;
+       left: 20vw;
 
     }
 }
@@ -976,6 +978,14 @@ footer {
 @media only screen and (max-width:600px) {
     #footer-contact {
         right: 10vw;
+        top: -5vh;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    #footer-contact {
+        left: 20vw;
         top: -5vh;
         font-size: 1rem;
     }

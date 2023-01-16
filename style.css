@@ -506,8 +506,9 @@ button {
 @media only screen and (max-width:600px) {
    #gallery {
     position: relative;  
-    top: 10vh;  
-    margin-top: 10%;
+    height: 80vh;
+    /* top: 10vh;   */
+    margin-top: 5%;
 }}
 
 
@@ -618,7 +619,7 @@ button {
 @media only screen and (max-width:600px) {
     #Reviews {
         position: relative;
-        top: 50vh;
+        /* top: 60vh; */
         
     }
 }
@@ -652,8 +653,8 @@ form {
 @media only screen and (max-width:600px) {
     #contact {
         position: relative;
-        margin-top: 45vh;
-        /* top: 10vh; */
+        margin-top: 10vh;
+        /* top: 60vh; */
     }
 }
 
@@ -799,6 +800,7 @@ footer {
 @media only screen and (max-width:600px) {
     footer {
         position: relative;
+        margin-top: 0%;
         width: 100vw;
         height: 30vh;
         top: 0%;

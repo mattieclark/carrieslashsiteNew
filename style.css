@@ -511,6 +511,14 @@ button {
     margin-top: 5%;
 }}
 
+@media only screen and (max-width:900px) {
+    #gallery {
+     position: relative;  
+     height: 85vh;
+     top: 40vh;  
+     margin-top: 5%;
+ }}
+
 
 .gallery {
     position: relative;
@@ -536,6 +544,19 @@ button {
 
     }
 }
+
+@media only screen and (max-width:900px) {
+    .gallery {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        top: 10vh;
+        /* background-color: rgb(231, 231, 231); */
+        box-shadow: none;
+
+    }
+}
+
 
 .slideshow {
     width: 410px;
@@ -624,6 +645,14 @@ button {
     }
 }
 
+@media only screen and (max-width:900px) {
+    #Reviews {
+        position: relative;
+        top: 80vh;
+        
+    }
+}
+
 
 
 #Reviews h3 {
@@ -655,6 +684,14 @@ form {
         position: relative;
         margin-top: 10vh;
         /* top: 60vh; */
+    }
+}
+
+@media only screen and (max-width:900px) {
+    #contact {
+        position: relative;
+        margin-top: 10vh;
+        top: 65vh;
     }
 }
 
@@ -717,6 +754,14 @@ form {
     margin-top: 10%;
     margin-bottom: 5%;
 }}
+
+@media only screen and (max-width:900px) {
+    #certificates {
+        position: relative;
+        top: 60vh;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }}
 
 #certificates h3 {
     position: relative;
@@ -809,6 +854,18 @@ footer {
     }
 }
 
+@media only screen and (max-width:900px) {
+    footer {
+        position: relative;
+        margin-top: 0%;
+        width: 100vw;
+        height: 40vh;
+        top: 250vh;
+        overflow: hidden;
+
+    }
+}
+
 #mixEffect {
     position: relative;
     bottom: -20px;
@@ -889,6 +946,13 @@ footer {
 }
 
 @media only screen and (max-width:600px) {
+    #footer-message {
+        display: none;
+
+    }
+}
+
+@media only screen and (max-width:900px) {
     #footer-message {
         display: none;
 

@@ -503,7 +503,7 @@ button {
     }
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:900px) and (orientation:landscape){
     #gallery {
      position: relative;  
      height: 85vh;
@@ -535,7 +535,7 @@ button {
     z-index: -1;
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:900px) and (orientation:landscape) {
     .gallery {
         position: relative;
         width: 100vw;
@@ -642,7 +642,7 @@ button {
     margin-bottom: 7%;
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:900px)and (orientation:landscape) {
     #Reviews {
         position: relative;
         top: 130vh;
@@ -693,7 +693,7 @@ form {
     align-items: center;
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:900px)and (orientation:landscape) {
     #contact {
         position: relative;
         margin-top: 10vh;
@@ -767,7 +767,7 @@ form {
     position: relative;
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:900px)and (orientation:landscape) {
     #certificates {
         position: relative;
         height: 150vh;
@@ -866,7 +866,7 @@ footer {
     z-index: 1;
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:900px) and (orientation:landscape) {
     footer {
         position: relative;
         margin-top: 0%;

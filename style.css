@@ -499,17 +499,9 @@ button {
 
 @media only screen and (max-width:600px) {
     #gallery h2 {
-        top: 20vh;
+        top: 0vh;
     }
 }
-
-@media only screen and (max-width:600px) {
-   #gallery {
-    position: relative;  
-    height: 80vh;
-    top: 10vh;  
-    margin-top: 5%;
-}}
 
 @media only screen and (max-width:900px) {
     #gallery {
@@ -518,6 +510,16 @@ button {
      top: 70vh;  
      margin-top: 5%;
  }}
+
+
+@media only screen and (max-width:600px) {
+   #gallery {
+    position: relative;  
+    height: 60vh;
+    top: 0vh;  
+    margin-top: 5%;
+}}
+
 
 
 .gallery {
@@ -550,7 +552,7 @@ button {
         position: relative;
         width: 100vw;
         height: 20vh;
-        top: 20vh;
+        top: 0vh;
         background-color: rgb(231, 231, 231);
         box-shadow: none;
 
@@ -651,7 +653,7 @@ button {
 @media only screen and (max-width:600px) {
     #Reviews {
         position: relative;
-        top: 15vh;
+        top: 5vh;
         
     }
 }
@@ -703,7 +705,7 @@ form {
     #contact {
         position: relative;
         margin-top: 10vh;
-        top: 85vh;
+        top: 5vh;
     }
 }
 
@@ -779,7 +781,7 @@ form {
     margin-top: 10%;
     margin-bottom: 5%;
     height:100vh;
-    top: 85vh;
+    top: 5vh;
 }}
 
 
@@ -883,7 +885,7 @@ footer {
         margin-top: 0%;
         width: 100vw;
         height: 30vh;
-        top: 90vh;
+        top: 0vh;
         /* bottom: 0vh; */
         overflow: hidden;
 

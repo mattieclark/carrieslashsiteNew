@@ -499,7 +499,7 @@ button {
 
 @media only screen and (max-width:600px) {
     #gallery h2 {
-        top: 0vh;
+        top: 10vh;
     }
 }
 
@@ -516,7 +516,7 @@ button {
    #gallery {
     position: relative;  
     height: 60vh;
-    top: 0vh;  
+    top: 10vh;  
     margin-top: 5%;
 }}
 

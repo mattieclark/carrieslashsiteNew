@@ -627,11 +627,7 @@ button {
     }
 }
 
-#contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 #Reviews {
     position: relative;
@@ -684,21 +680,30 @@ form {
     border-radius: 25px 25px;
 }
 
-@media only screen and (max-width:600px) {
-    #contact {
-        position: relative;
-        margin-top: 10vh;
-        /* top: 60vh; */
-    }
+#contact {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media only screen and (max-width:900px) {
     #contact {
         position: relative;
         margin-top: 10vh;
-        top: 65vh;
+        top: 75vh;
     }
 }
+
+@media only screen and (max-width:600px) {
+    #contact {
+        position: relative;
+        margin-top: 10vh;
+        top: 85vh;
+    }
+}
+
+
 
 .label {
     position: relative;
@@ -752,13 +757,9 @@ form {
     border: 1px solid black;
 }
 
-
-@media only screen and (max-width:600px) {
 #certificates {
     position: relative;
-    margin-top: 10%;
-    margin-bottom: 5%;
-}}
+}
 
 @media only screen and (max-width:900px) {
     #certificates {
@@ -769,6 +770,16 @@ form {
         margin-bottom: 5%;
     }}
 
+@media only screen and (max-width:600px) {
+#certificates {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    height:70vh;
+    top: 85vh;
+}}
+
+
+
 #certificates h3 {
     position: relative;
     display: flex;
@@ -777,14 +788,14 @@ form {
 
 #certificate-thumbs {
     width: 100vw;
-    height: 70vh;
+    height: 100%;
     /* background-color: rgb(252, 200, 220); */
     position: relative;
     justify-self: center;
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .cert_row {
@@ -820,6 +831,7 @@ form {
 #certificate-thumbs img {
     position: relative;
     width: 70%;
+    image-resolution: 20%;
 }
 
 
@@ -848,18 +860,6 @@ footer {
     z-index: 1;
 }
 
-@media only screen and (max-width:600px) {
-    footer {
-        position: relative;
-        margin-top: 0%;
-        width: 100vw;
-        height: 30vh;
-        top: 0%;
-        overflow: hidden;
-
-    }
-}
-
 @media only screen and (max-width:900px) {
     footer {
         position: relative;
@@ -872,6 +872,21 @@ footer {
 
     }
 }
+
+@media only screen and (max-width:600px) {
+    footer {
+        position: relative;
+        margin-top: 0%;
+        width: 100vw;
+        height: 30vh;
+        top: 90vh;
+        /* bottom: 0vh; */
+        overflow: hidden;
+
+    }
+}
+
+
 
 #mixEffect {
     position: relative;
@@ -896,6 +911,7 @@ footer {
     #mixEffect {
         width: 100vw;
         height: inherit;
+        justify-content: space-around;
         overflow: hidden;
     }
 }
@@ -980,14 +996,6 @@ footer {
 
 }
 
-@media only screen and (max-width:600px) {
-    #footer-contact {
-        right: 10vw;
-        top: -5vh;
-        font-size: 1rem;
-    }
-}
-
 @media only screen and (max-width:900px) {
     #footer-contact {
         left: 20vw;
@@ -995,6 +1003,16 @@ footer {
         font-size: 1rem;
     }
 }
+
+@media only screen and (max-width:600px) {
+    #footer-contact {
+        left: 0vw;
+        top: -5vh;
+        font-size: 1rem;
+    }
+}
+
+
 
 
 #footer-copy {

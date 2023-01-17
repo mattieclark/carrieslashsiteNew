@@ -19,7 +19,7 @@ html {
 
 body {
     width: 100vw;
-    height: fit-content;   
+    height: fit-content;
     margin: 0%;
     padding: 0%;
     z-index: -1;
@@ -246,10 +246,11 @@ h1 {
     #banner {
         position: relative;
         width: 100vw;
-        height:20vh;
+        height: 20vh;
 
 
-    }}
+    }
+}
 
 #banner img {
     position: absolute;
@@ -265,10 +266,10 @@ h1 {
         position: absolute;
         top: 1vh;
         left: 1%;
-        width:100vw;
-        height:20vh;
-        object-fit:fill;
-        
+        width: 100vw;
+        height: 20vh;
+        object-fit: fill;
+
     }
 }
 
@@ -329,14 +330,15 @@ content {
     align-items: center;
 }
 
-@media only screen and (max-width:600px){
-content {
-    padding-left: 5vw;
-    padding-right: 5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}}
+@media only screen and (max-width:600px) {
+    content {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 #intro {
 
@@ -360,12 +362,12 @@ content {
     font-size: x-large;
 }
 
-@media only screen and (max-width:600px) {
+/* @media only screen and (max-width:600px) {
     #intro {
-        /* margin-top: 15vh; */
-        /* margin-bottom: 7%; */
+        margin-top: 15vh; 
+        margin-bottom: 7%; 
     }
-}
+} */
 
 .quote {
     position: absolute;
@@ -454,7 +456,7 @@ content {
     #price-list {
         position: relative;
         margin-top: 10%;
-        margin-bottom:20vh;
+        margin-bottom: 20vh;
         width: 90vw;
         height: 50vh;
         justify-content: flex-start;
@@ -503,22 +505,24 @@ button {
     }
 }
 
-@media only screen and (max-width:900px) and (orientation:landscape){
+@media only screen and (max-width:900px) and (orientation:landscape) {
     #gallery {
-     position: relative;  
-     height: 85vh;
-     top: 70vh;  
-     margin-top: 5%;
- }}
+        position: relative;
+        height: 85vh;
+        top: 70vh;
+        margin-top: 5%;
+    }
+}
 
 
 @media only screen and (max-width:600px) {
-   #gallery {
-    position: relative;  
-    height: 60vh;
-    top: 40vh;  
-    margin-top: 5%;
-}}
+    #gallery {
+        position: relative;
+        height: 60vh;
+        top: 40vh;
+        margin-top: 5%;
+    }
+}
 
 
 
@@ -532,7 +536,7 @@ button {
     background-color: rgb(173, 165, 165);
     border-radius: 1%;
     box-shadow: 1px 1px rgb(36, 34, 32);
-    z-index: -1;
+    z-index: +1;
 }
 
 @media only screen and (max-width:900px) and (orientation:landscape) {
@@ -584,7 +588,7 @@ button {
         width: 380px;
         height: 380px;
         left: 5vw;
-        
+
     }
 }
 
@@ -604,10 +608,13 @@ button {
     width: 40px;
 }
 
+
+
 @media only screen and (max-width:900px) {
     button {
         display: none;
-    }}
+    }
+}
 
 #left {
     position: absolute;
@@ -646,7 +653,7 @@ button {
     #Reviews {
         position: relative;
         top: 130vh;
-        
+
     }
 }
 
@@ -654,7 +661,7 @@ button {
     #Reviews {
         position: relative;
         top: 50vh;
-        
+
     }
 }
 
@@ -774,15 +781,17 @@ form {
         top: 100vh;
         margin-top: 10%;
         margin-bottom: 5%;
-    }}
+    }
+}
 
 @media only screen and (max-width:600px) {
-#certificates {
-    margin-top: 10%;
-    margin-bottom: 5%;
-    height:100vh;
-    top: 50vh;
-}}
+    #certificates {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        height: 100vh;
+        top: 50vh;
+    }
+}
 
 
 
@@ -813,7 +822,7 @@ form {
 }
 
 .cert-img-container {
-    position: relative; 
+    position: relative;
     margin: 2%;
     height: 200px;
     width: 200px;
@@ -873,7 +882,7 @@ footer {
         width: 100vw;
         height: 40vh;
         top: 250vh;
-        left:5vw;
+        left: 5vw;
         overflow: hidden;
 
     }
@@ -983,7 +992,7 @@ footer {
 
 @media only screen and (max-width:900px) {
     #footer-message {
-       left: 20vw;
+        left: 20vw;
 
     }
 }

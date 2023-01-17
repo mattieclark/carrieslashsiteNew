@@ -14,9 +14,7 @@ let left = document.querySelector("#left");
 
 
 
-
 right.addEventListener("click", function () {
-
     node.children[i].classList.remove("active");
 
     i = i + 1;
@@ -29,20 +27,50 @@ right.addEventListener("click", function () {
 });
 
 
+// right.addEventListener("click", function () {
+
+//     alert("click");
+
+
+//     node.children[i].classList.remove("active");
+
+//     i = i + 1;
+
+//     if (i >= node.children.length) {
+//         i = 0
+//     };
+
+//     node.children[i].classList.add("active");
+// });
 
 left.addEventListener("click", function () {
-
     node.children[i].classList.remove("active");
 
     i = i - 1;
 
     if (i < 0) {
-        i = 4;
+        i = node.children.length-1;
     };
 
     node.children[i].classList.add("active");
 
 });
+
+// left.addEventListener("click", function () {
+
+//     alert("click");
+
+//     node.children[i].classList.remove("active");
+
+//     i = i - 1;
+
+//     if (i < 0) {
+//         i = node.children.length
+//     };
+
+//     node.children[i].classList.add("active");
+
+// });
 
 //////////////////form submit msg/////////////////////////////////////////////
 

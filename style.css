@@ -533,6 +533,18 @@ button {
     z-index: -1;
 }
 
+@media only screen and (max-width:900px) {
+    .gallery {
+        position: relative;
+        width: 100vw;
+        height: 120vh;
+        top: 20vh;
+        /* background-color: rgb(231, 231, 231); */
+        box-shadow: none;
+
+    }
+}
+
 @media only screen and (max-width:600px) {
     .gallery {
         position: relative;
@@ -545,17 +557,7 @@ button {
     }
 }
 
-@media only screen and (max-width:900px) {
-    .gallery {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        top: 10vh;
-        /* background-color: rgb(231, 231, 231); */
-        box-shadow: none;
 
-    }
-}
 
 
 .slideshow {
@@ -638,6 +640,14 @@ button {
     margin-bottom: 7%;
 }
 
+@media only screen and (max-width:900px) {
+    #Reviews {
+        position: relative;
+        top: 130vh;
+        
+    }
+}
+
 @media only screen and (max-width:600px) {
     #Reviews {
         position: relative;
@@ -646,13 +656,7 @@ button {
     }
 }
 
-@media only screen and (max-width:900px) {
-    #Reviews {
-        position: relative;
-        top: 100vh;
-        
-    }
-}
+
 
 
 
@@ -691,7 +695,7 @@ form {
     #contact {
         position: relative;
         margin-top: 10vh;
-        top: 75vh;
+        top: 120vh;
     }
 }
 
@@ -765,7 +769,7 @@ form {
     #certificates {
         position: relative;
         height: 150vh;
-        top: 60vh;
+        top: 100vh;
         margin-top: 10%;
         margin-bottom: 5%;
     }}
@@ -774,7 +778,7 @@ form {
 #certificates {
     margin-top: 10%;
     margin-bottom: 5%;
-    height:70vh;
+    height:100vh;
     top: 85vh;
 }}
 
